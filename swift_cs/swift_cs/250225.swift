@@ -30,8 +30,8 @@ func programmers_체육복(_ n:Int, _ lost:[Int], _ reserve:[Int]) -> Int {
 //    }
 //    return n - count
     
-    var lostSet = Set(lost)
-    var reserveSet = Set(reserve)
+    let lostSet = Set(lost)
+    let reserveSet = Set(reserve)
     
     let actualLost = lostSet.subtracting(reserveSet)
     var actualReserve = reserveSet.subtracting(lostSet)
