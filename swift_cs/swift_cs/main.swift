@@ -7,14 +7,6 @@
 
 import Foundation
 
-let s = ["jack", "korea", "kim"]
-let num = [3, 4, 5, 7, 5]
-let num1 = [[1, 2], [2, 3]]
-let num2 = [[3, 4], [5, 6]]
-let number: Int64 = 3
-let test = Int64(String(String(number).sorted(by: >)))!
-var str = "01032983977"
+var ary1: String = "3141592"
+var ary2: String = "271"
 
-var sum = num.reduce(1 ,*)
-
-// 1, 10, 11, 100, 101, 110, 111
