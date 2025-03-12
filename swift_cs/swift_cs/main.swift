@@ -7,6 +7,14 @@
 
 import Foundation
 
-var ary1: String = "3141592"
-var ary2: String = "271"
+let says: String = "people"
+var result: String = ""
+
+for i in says {
+    if !result.contains(i) {
+        result += String(i)
+    }
+}
+
+print(result)
 
