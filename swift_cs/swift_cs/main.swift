@@ -7,14 +7,3 @@
 
 import Foundation
 
-let says: String = "people"
-var result: String = ""
-
-for i in says {
-    if !result.contains(i) {
-        result += String(i)
-    }
-}
-
-print(result)
-
