@@ -7,7 +7,3 @@
 
 import Foundation
 
-var arr = [0, 1, 2, 3, 4, 5]
-var query = [4, 1 ,2]
-
-print(programmer_옹알이2(["ayaye", "uuu", "yeye", "yemawoo", "ayaayaa"]))
