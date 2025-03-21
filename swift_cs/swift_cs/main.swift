@@ -7,24 +7,7 @@
 
 import Foundation
 
-let clothes = [["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
-var result = 1
-var dic: [String: [String]] = [:]
 
-for cloth in clothes {
-    if dic[cloth[1]] == nil {
-        dic[cloth[1]] = [cloth[0]]
-    } else {
-        dic[cloth[1]]?.append(cloth[0])
-    }
-}
+let numbers: String = "17"
 
-for d in dic {
-    result *= d.value.count + 1
-}
-
-print(result-1)
-
-
-
-
+var input = numbers.map {$0}
