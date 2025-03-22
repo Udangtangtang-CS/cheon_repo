@@ -7,7 +7,11 @@
 
 import Foundation
 
+// 카펫의 가로 길이는 세로 길이와 같거나, 세로 길이보다 깁니다.
 
-let numbers: String = "17"
+let n = 15
+var str = String(n, radix: 2)
+print(str)
+//print(Int(String(str.reversed()), radix: 3)!)
+print(str)
 
-var input = numbers.map {$0}
