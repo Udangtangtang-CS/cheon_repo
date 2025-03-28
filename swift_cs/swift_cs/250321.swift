@@ -58,29 +58,29 @@ func programmers_프로세스(_ priorities: [Int], _ location: Int) -> Int {
     return -1
 }
 
-struct Queue<T> {
-    var array: [(T, T)?] = []
-    private var head: Int = 0
-    
-    var isEmpty: Bool {
-        return array.count - head <= 0
-    }
-    
-    
-    mutating func enqueue(_ count: T, _ priority: T) {
-        array.append((count, priority))
-    }
-    
-    mutating func dequeue() -> (T, T)? {
-        guard head < array.count, let element = array[head] else { return nil }
-        array[head] = nil
-        head += 1
-        
-        if head > array.count / 2 {
-            array.removeFirst(head)
-            head = 0
-        }
-        return  element
-    }
-}
+//struct Queue<T> {
+//    var array: [(T, T)?] = []
+//    private var head: Int = 0
+//    
+//    var isEmpty: Bool {
+//        return array.count - head <= 0
+//    }
+//    
+//    
+//    mutating func enqueue(_ count: T, _ priority: T) {
+//        array.append((count, priority))
+//    }
+//    
+//    mutating func dequeue() -> (T, T)? {
+//        guard head < array.count, let element = array[head] else { return nil }
+//        array[head] = nil
+//        head += 1
+//        
+//        if head > array.count / 2 {
+//            array.removeFirst(head)
+//            head = 0
+//        }
+//        return  element
+//    }
+//}
 
