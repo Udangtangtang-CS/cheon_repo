@@ -7,11 +7,4 @@
 
 import Foundation
 
-// 카펫의 가로 길이는 세로 길이와 같거나, 세로 길이보다 깁니다.
-
-let n = 15
-var str = String(n, radix: 2)
-print(str)
-//print(Int(String(str.reversed()), radix: 3)!)
-print(str)
-
+print(programmers_피로도(80, [[80,20],[50,40],[30,10]]))
