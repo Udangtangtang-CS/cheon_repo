@@ -34,29 +34,29 @@ func programmers_베스트앨범(_ genres:[String], _ plays:[Int]) -> [Int] {
     return result
 }
 
-func programmers_프로세스(_ priorities: [Int], _ location: Int) -> Int {
-    var queue = Queue<Int>()
-    var order = 0
-    
-    for i in 0..<priorities.count {
-        queue.enqueue(i, priorities[i])
-    }
-    
-    while !queue.isEmpty {
-        let current = queue.dequeue()!
-        
-        if queue.array.contains(where: { $0?.1 ?? 0 > current.1 }) {
-            queue.enqueue(current.0, current.1)
-        } else {
-            order += 1
-            if current.0 == location {
-                return order
-            }
-        }
-    }
-    
-    return -1
-}
+//func programmers_프로세스(_ priorities: [Int], _ location: Int) -> Int {
+//    var queue = Queue<Int>()
+//    var order = 0
+//    
+//    for i in 0..<priorities.count {
+//        queue.enqueue(i, priorities[i])
+//    }
+//    
+//    while !queue.isEmpty {
+//        let current = queue.dequeue()!
+//        
+//        if queue.array.contains(where: { $0?.1 ?? 0 > current.1 }) {
+//            queue.enqueue(current.0, current.1)
+//        } else {
+//            order += 1
+//            if current.0 == location {
+//                return order
+//            }
+//        }
+//    }
+//    
+//    return -1
+//}
 
 //struct Queue<T> {
 //    var array: [(T, T)?] = []
