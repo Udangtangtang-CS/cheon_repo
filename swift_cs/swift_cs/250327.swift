@@ -27,7 +27,7 @@ func programmers_이진_변환_반복하기(_ s:String) -> [Int] {
 func programmers_멀리_뛰기(_ n:Int) -> Int {
     var first = 0
     var second = 1
-    for i in 0..<n {
+    for _ in 0..<n {
         let temp = first + second
         first = second
         second = temp % 1234567
