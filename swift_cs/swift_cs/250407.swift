@@ -45,6 +45,7 @@ func programmers_디스크_컨트롤러(_ jobs:[[Int]]) -> Int {
 
     return totalResponseTime / taskCount
 }
+
 //📌 문제 요약
 //    •    각 작업은 [요청시간, 처리시간] 형식으로 들어온다.
 //    •    하나의 작업만 처리할 수 있으며, 하나의 작업이 끝나야 다음 작업을 시작할 수 있다.
