@@ -7,11 +7,25 @@
 
 import Foundation
 
+var id_list: [String] = ["muzi", "frodo", "apeach", "neo"]
+var report: [String] = ["muzi frodo", "apeach frodo", "frodo neo", "muzi neo", "apeach muzi"]
+var k: Int = 2
 
+var dic: [String:[String]] = [:]
+var result = [String: Int]()
+var banUser: [String] = []
 
-/// 두 개의 큐에서 원소를 pop, insert 하는 작업을 진행해서 두 개의 큐를 같게 만들어라
-/// queue1의 길이와 queue2의 길이는 같다.
-/// 방법1, queue2의 모든 원소를 추출하여 queue1에 추가한 뒤, queue1의 원소를 순서대로 추출하여 queue2에 push한다.
-/// 방법2, queue에서 적절한 값을 추출하여 각각의 queue에 넣어준다
+for r in report {
+    let id = r.split(separator: " ")[0]
+    let report_id = r.split(separator: " ")[1]
+    dic[String(report_id), default: []].append(String(id))
+}
 
-print(programmers_두_큐_합_같게_만들기([3, 2, 7, 2], [4, 6, 5, 1]))
+banUser = dic.filter { $0.value.count >= k }.map { $0.key }
+
+for user in banUser {
+    for r in dic[user] ?? [] {
+        result[r, default: 0] += 1
+    }
+}
+print(id_list.map { result[$0, default: 0] })
